@@ -23,6 +23,10 @@ function Pagination({ count }) {
     const params = new URLSearchParams(searchParams);
     params.set("page", newPage);
     router.push(`${pathname}?${params.toString()}`, { scroll: false });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }
 
   const getVisiblePages = () => {
