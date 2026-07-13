@@ -73,7 +73,7 @@ function MobileNavBar() {
             {/* Saved Items */}
             <li>
               <Link
-                href="profile/saved"
+                href="/profile/saved"
                 onClick={handleLinkClick}
                 className="flex items-center gap-3 py-3 px-4 hover:bg-gray-50 rounded-xl transition-all duration-200 hover:text-primary-500 group"
               >
